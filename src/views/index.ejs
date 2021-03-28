@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<%- include('part/header') %>
+<body class="container-fluid">
+
+<%- include('part/head-menu') %>
+
+<h1>Заготовка сайта</h1>
+<% if (user!==null) { %>
+<div class="text-center"><%- user.email %></div>
+<a href="/signout">Выйти</a>
+<% } %>
+
+<%- include('part/footer') %>
+
+</body>
+</html>

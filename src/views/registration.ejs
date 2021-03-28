@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<%- include('part/header') %>
+<body class="container-fluid">
+
+<%- include('part/head-menu') %>
+
+<h1>Регистрация</h1>
+
+<form action="/signup" method="post">
+    <div class="form-floating mb-3">
+        <input type="tel" class="form-control" id="inputEmail" name="username">
+        <label for="inputEmail">username</label>
+    </div>
+
+    <div class="mb-3">
+        <label for="inputPassword" class="form-label" >Пароль</label>
+        <input type="password" class="form-control" id="inputPassword" name="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Регистрация</button>
+    <a href="/login">Войти</a>
+</form>
+
+
+<%- include('part/footer') %>
+
+</body>
+</html>
